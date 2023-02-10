@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Wagber e Everton</title>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+     
+            font-family: 'Montserrat', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header{
+            position: fixed;
+            width: 100%;
+            height: 100px;
+            /* background: green; */
+            display: flex;
+            background-color: rgba(255, 255, 255, 0.3);
+            z-index: 100;
+            border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+        }
+
+        .sec{
+            width: 100%;
+            height: 800px;
+            /* background: red; */
+        }
+
+        .sec-2{
+            width: 100%;
+            padding: 10px;
+            /* background: red; */
+        }
+
+        .background{
+            background-image: url('assets/images/capa_01.jpeg');
+            
+            background-attachment: fixed;
+            background-position-y: -100px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: brightness(0.9);
+        }
+
+        .fixed{
+            
+        }
+
+        .col-3{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-desk{
+            width:100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo{
+            width: 200px;
+        }
+
+        .background-black{
+            background: #222;
+        }
+
+        .col-3 span{
+            padding: 7px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #111;
+            font-weight: bold;
+        }
+
+        .sec-description{
+            padding: 40px 10px;
+        }
+
+        .center{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .color-write{
+            color: #fff;
+        }
+
+        .b-2-c-write{
+            border: 2px solid #fff;
+        }
+
+        .p-20{
+            padding: 20px;
+            border-radius: 3px;
+        }
+
+        .conainer-videos{
+            width: 100%;
+            padding: 10px;
+        }
+
+        .card-video{
+            margin-top: 10px;
+        }
+
+        .card-video header{
+            padding: 10px 0px;
+        }
+
+        .card-video video{
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+
+        
+
+        @media(max-width:400px){
+
+            .nav-desk{
+                display:none;
+            }
+
+            .sec{
+                height: 600px;
+            }
+
+            .sec header, .sec-2 header{
+                width: 100%;
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .background{
+                
+                background-position-y: -50px;
+                background-position-x: -325px;
+               
+              
+              
+            }
+
+            .logo{
+                width: 150px;
+            }
+
+            .card-video{
+                width: 100%;
+            }
+
+            .card-video {
+                width: 100%;
+            }
+
+            .card-video video {
+                width: 100%;
+            }
+
+
+
+
+
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+
+        <section class="header">
+            <div class="col-3"></div>
+            <div class="col-3">
+                <img class="logo" src="assets/images/logo.png" alt="">
+            </div>
+            <div class="col-3">
+                <div class="nav-desk">
+                    <span>
+                        Agenda
+                    </span>
+                    <span>
+                        Fotos
+                    </span>
+                    <span>
+                        Redes Sociais
+                    </span>
+                    <span>
+                        Contato
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="sec fixed background">
+
+        </section>
+
+        <section class="sec-description color-write background-black center">
+
+            <div class="b-2-c-write p-20">
+                Wagner e Everton é formado por dois amigos que se conhecem a mais de 20 anos, mas recentemente formaram a dupla.
+            </div>
+            
+        </section>
+
+        <section class="sec-2">
+
+            <header>
+                <h1>Agenda</h1>
+            </header>
+            <article>
+                <header>
+                    <h2>Confira a nossa programação</h2>
+                </header>
+
+                <ul>
+                    <li>05/02 Balsa</li>
+                    <li>10/02 Castelinho</li>
+                    <li>12/02 Casamento </li>
+                    <li>18/02 Carnaval </li>
+                    <li>25/02 Boteco Vip</li>
+                    <li>04/03 Camargos bar</li>
+                    <li>19/03 Monjolinho</li>
+                    <li>25/03 Aniversário </li>
+                    <li>29/04 Padroeira Sta Catarina</li>
+                </ul>
+
+            </article>
+        </section>
+
+        <section class="sec">
+            <header>
+                <h1>Videos</h1>
+            </header>
+            
+            <div class="conainer-videos">
+
+                <article class="card-video">
+                    <header>
+                        <h2>Criei Coragem</h2>
+                    </header>
+                    <video controls src="assets/videos/Criei_coragem.mp4">
+
+                    </video>
+                </article>
+
+                <article class="card-video">
+                    <header>
+                        <h2>Orgulho bobo</h2>
+                    </header>
+                    <video controls src="assets/videos/orgulho_bobo.mp4">
+
+                    </video>
+                </article>
+
+                <article class="card-video">
+                    <header>
+                        <h2>Vem pra cá</h2>
+                    </header>
+                    <video controls src="assets/videos/vem_pra_ca.mp4">
+
+                    </video>
+                </article>
+
+
+            </div>
+
+
+        </section>
+        
+
+
+
+
+    </div>
+    
+</body>
+</html>
